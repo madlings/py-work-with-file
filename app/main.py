@@ -12,7 +12,7 @@ def create_report(data_file_name: str, report_file_name: str) -> None:
 
             # Parse CSV format: operation,amount
             operation, amount = line.split(",")
-            
+
             if operation == "supply":
                 supply_total += int(amount)
             elif operation == "buy":
